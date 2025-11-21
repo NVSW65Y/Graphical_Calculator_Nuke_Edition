@@ -8,3 +8,11 @@ Nuke+Explosion+Timer+ALOT Added.
 
 # Known Bugs
 зелёнка вокруг взрыва на разных разрешениях (прозрачность не так применяется), позже пофикшу.
+
+# Explosion:
+https://github.com/user-attachments/assets/85f3d20d-266f-4301-8804-7fdc0508baff
+
+
+# Defuse:
+https://github.com/user-attachments/assets/62242b4e-15b2-4105-9098-a4a85e52e748
+
