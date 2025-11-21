@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCalculator));
             this.lblDisplay = new System.Windows.Forms.Label();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
@@ -51,10 +52,14 @@
             this.lblNum2 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnBackSpace = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDisplay
             // 
+            this.lblDisplay.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDisplay.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDisplay.ForeColor = System.Drawing.Color.Black;
             this.lblDisplay.Location = new System.Drawing.Point(7, 59);
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(334, 50);
@@ -252,6 +257,8 @@
             // 
             // lblNum1
             // 
+            this.lblNum1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblNum1.ForeColor = System.Drawing.Color.Black;
             this.lblNum1.Location = new System.Drawing.Point(7, 9);
             this.lblNum1.Name = "lblNum1";
             this.lblNum1.Size = new System.Drawing.Size(119, 38);
@@ -297,12 +304,35 @@
             this.btnBackSpace.UseVisualStyleBackColor = false;
             this.btnBackSpace.Click += new System.EventHandler(this.btnBackSpace_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Impact", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(348, 469);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 80);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "NUKE";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            // 
             // FrmCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 33F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(440, 561);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblNum2);
             this.Controls.Add(this.lblOperation);
@@ -328,10 +358,12 @@
             this.Controls.Add(this.lblDisplay);
             this.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.Name = "FrmCalculator";
             this.Text = "Calculator";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.FrmCalculator_Load);
             this.Enter += new System.EventHandler(this.FrmCalculator_Enter);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmCalculator_KeyDown);
@@ -365,6 +397,7 @@
         private System.Windows.Forms.Label lblNum2;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnBackSpace;
+        private System.Windows.Forms.Button button1;
     }
 }
 
