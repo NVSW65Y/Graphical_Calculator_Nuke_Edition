@@ -5,3 +5,6 @@ In this application which is written in C# and uses winform technology, I am goi
 
 # Update
 Nuke+Explosion+Timer+ALOT Added.
+
+# Known Bugs
+зелёнка вокруг взрыва на разных разрешениях (прозрачность не так применяется), позже пофикшу.
